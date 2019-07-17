@@ -7,15 +7,17 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class PointingPage {
   private isDisabled = true;
+  private isRotationCompleted = false;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad PointingPage');
+    setTimeout(() => { this.isRotationCompleted = true; }, 5000);
   }
 
   gotoWeDecideLater(){
-    // we are still thinkking...
+    // we are still thinking...
   }
 
 }

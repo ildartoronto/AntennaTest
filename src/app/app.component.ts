@@ -11,7 +11,7 @@ import { WelcomePage } from '../pages/welcome/welcome';
 })
 export class MyApp {
   rootPage:any = WelcomePage;  
-  // rootPage:any = PointingPage;  
+  // rootPage:any = PointingPage;  // TEST svg animation
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
 
