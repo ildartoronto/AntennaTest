@@ -1,0 +1,52 @@
+<ion-content class="bg-style">
+  <ion-grid text-center no-padding>
+    <ion-row center>
+      <ion-col>
+        <h1>Finding Your Sattellite</h1>    
+      </ion-col>
+    </ion-row>
+    
+    <ion-row center>
+      <ion-col> 
+        <h3 *ngIf='isSearchingFinished === false'>We have lots of sattellites. We're looking for a good match...</h3>
+        <h3 *ngIf='isSearchingFinished === true'>We’ve found the best satellite for you at your current location. Say ‘hello’ to your new best friend, SATTEFI-US-117.</h3>
+      </ion-col>
+    </ion-row>
+    
+    <ion-row center>
+      <ion-col> 
+        <ion-spinner *ngIf='isSearchingFinished === false'></ion-spinner>
+      </ion-col>  
+    </ion-row>
+
+    <ion-row>
+      <ion-col>      
+        <ion-icon *ngIf="isSearchingFinished === false" name="satellite"></ion-icon> 
+      </ion-col>
+      <ion-col> 
+        <ion-icon name="satellite" [ngStyle]="{'transform': 'rotate(' + deg90 + 'deg)'}"></ion-icon>
+      </ion-col>
+    </ion-row>
+
+    <ion-row center>     
+      <ion-col> 
+        <ion-icon name="earth"></ion-icon>
+      </ion-col>  
+    </ion-row>   
+    
+    <ion-row>
+      <ion-col>      
+        <!-- <ion-icon *ngIf="isSearchingFinished === false" name="satellite"></ion-icon>  -->
+        <ion-icon *ngIf="isSearchingFinished === false" name="satellite" [ngStyle]="{'transform': 'rotate(' + deg270 + 'deg)'}"></ion-icon> 
+      </ion-col>
+      <ion-col> 
+        <ion-icon *ngIf="isSearchingFinished === false" name="satellite" [ngStyle]="{'transform': 'rotate(' + deg180 + 'deg)'}"></ion-icon>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+  
+  <ion-fab bottom right>
+    <button *ngIf='isSearchingFinished === true' ion-fab class="button-style" (click)="gotoPointingInstructionsPage()">Next</button>
+  </ion-fab>  
+</ion-content>

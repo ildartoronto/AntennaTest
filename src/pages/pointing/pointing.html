@@ -1,0 +1,34 @@
+<ion-content class="bg-style">
+
+  <ion-grid text-center>
+    <ion-row center>
+      <ion-col>
+        <h1>Pointing in the right direction</h1>    
+      </ion-col>
+    </ion-row>
+
+    <ion-row center>
+      <ion-col> 
+        <h3>The minute hand is where you’re pointing</h3>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col center text-center>      
+        <div class="outer-ring"></div>
+        <div class="inner-ring"></div> 
+        <div class="short-hand"></div> 
+        <div class="long-hand"></div> 
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <h3>The <span style="color:purple">hour hand</span> is SATTEFI-US-117</h3>
+    </ion-row>
+  </ion-grid>
+
+  <ion-fab bottom right>
+    <button [disabled]="isDisabled" ion-fab class="button-style" (click)="gotoWeDecideLater()">Next</button>
+  </ion-fab>
+
+</ion-content>

@@ -1,0 +1,49 @@
+page-pointing {
+    h3 {
+        margin-top: 20px;
+    }
+
+    .outer-ring {
+            mask-size: contain;
+            background: currentColor;
+            mask-repeat: no-repeat;
+            width: 6em;
+            height: 6em;
+            mask-image: url('../assets/outer ring.svg');
+            color: white;
+            transform: translate(60px, 0px);
+        }
+
+    .inner-ring {
+            mask-size: contain;
+            background: currentColor;
+            mask-repeat: no-repeat;
+            width: 1em;
+            height: 1em;
+            mask-image: url('../assets/inner ring.svg');
+            color: white;
+            transform: translate(95px, -50px);
+        }
+
+    .short-hand {
+            mask-size: contain;
+            background: currentColor;
+            mask-repeat: no-repeat;
+            width: 2em;
+            height: 2em;
+            mask-image: url('../assets/short hand.svg');
+            color: purple;
+            transform: translate(100px, -55px);
+        }
+        
+    .long-hand {
+            mask-size: contain;
+            background: currentColor;
+            mask-repeat: no-repeat;
+            width: 1.8em;
+            height: 1.8em;
+            mask-image: url('../assets/long hand.svg');
+            color: white;
+            transform: translate(100px, -115px);
+        }
+}

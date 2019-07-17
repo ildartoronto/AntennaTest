@@ -1,0 +1,25 @@
+page-satellite-selection {
+    h3 {
+        margin-top: 25px;
+    }
+    
+    ion-icon {
+        &[class*="earth"] {
+            mask-size: contain;
+            background: currentColor;
+            width: 5em;
+            height: 5em;
+            mask-image: url(../assets/earth.svg);
+            color: white;
+        }
+
+        &[class*="satellite"] {
+            mask-size: contain;
+            background: currentColor;
+            width: 2.5em;
+            height: 2.5em;
+            mask-image: url(../assets/satellite.svg);
+            color: white;
+        }
+    }
+}
